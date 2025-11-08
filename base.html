@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FB | Soluções em TI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <h1 class="logo">FELIPE CAMPOS BORGES - TECNOLOGIA DA INFORMAÇÃO</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- Seção Home -->
+<section id="home" class="hero">
+  <div class="container hero-flex">
+    <div class="hero-text">
+      <h2>Olá, esse ao lado sou eu, prazer!</h2>
+      <p>Eu resido na região Metropolitana do Rio Grande do Sul/BR. Possuo Conhecimento em linguagens de programação, banco de dados e manutenção de hardwares.</p>
+      <p>A baixo tem mais informações sobre mim só precisa descer um pouco a tela. Mas caso queira entrar em contato comigo clique abaixo  &#128071; .</p>
+      <a href="#contato" class="btn">Entre em contato comigo!</a>
+    </div>
+
+    <!-- Carrossel ao lado direito -->
+    <div class="hero-img">
+      <div class="carousel">
+        <div class="slides">
+          <img src="foto1.jpg" alt="Foto 1">
+          <img src="foto2.jpg" alt="Foto 2">
+          <img src="foto3.jpg" alt="Foto 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Prezados</p>
+      <br>
+      <p>  Sou Felipe Campos Borges, tenho formação técnica em Eletrotécnica e atualmente curso Tecnólogo em Análise e Desenvolvimento de Sistemas pela Ulbra.
+      Tenho experiência com suporte ao cliente via WhatsApp, e-mail e ligações, além de manutenção eletrônica de hardware.
+      Gosto de aprender novas tecnologias, resolver problemas de forma prática e colaborar em ambientes que valorizem inovação e crescimento.
+      Estou em busca de oportunidades para aplicar e desenvolver minhas habilidades na área de tecnologia e suporte técnico.</p>
+      <br>
+      <p>  Estou à disposição para discutir como posso contribuir para sua equipe ou projeto. Agradeço pela consideração e aguardo seu contato.</p>
+      <br>
+      <p>Atenciosamente,</p>
+      <p>Felipe Campos Borges</p>
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Hardwares</h3>
+          <p>Técnico Eletrotécnico/Eletrônica - Instalação e manutenção em Hardwares.</p>
+        </div>
+        <div class="card">
+          <h3>Desenvolvedor Full Stack</h3>
+          <p>Projetos em programação backend e frontend.</p>
+          <p>Linguagens: JAVA, PYTHON, CSS, PHP e entre outras.</p>
+        </div>
+        <div class="card">
+          <h3>Suporte Técnico</h3>
+          <p>Atendimento ágil e eficiente via whatsapp, e-mail e presencial.</p>
+        </div>
+        <div class="card">
+          <h3>Idioma: Inglês</h3>
+          <p>Escrita (Avançado), Leitura(Avançado), Tradução(Avançado) e Comunicação(Intermediário).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+<section id="contato" class="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <p>Felipe Campos Borges</p>
+    <p>Portfólio: https://github.com/Lipex-cyber</p>
+    <p>E-mail: felipecamposborgesinf@gmail.com</p>
+    <p>Telefone: (51) 99604-8894</p>
+    <br>
+    <p>Ou acesse alguns dos links abaixo, para direcionar aos adress automaticamente:</p>
+    <br>
+    <div class="links-contato">
+      <a href="https://github.com/Lipex-cyber" target="_blank">💻 GitHub</a>
+      <a href="mailto:felipecamposborgesinf@gmail.com">📧 E-mail</a>
+      <a href="https://wa.me/5551996048894" target="_blank">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+// Script do Carrossel
+
+<script>
+  const slides = document.querySelector('.carousel .slides');
+  const images = document.querySelectorAll('.carousel .slides img');
+  const prev = document.querySelector('.carousel .prev');
+  const next = document.querySelector('.carousel .next');
+  let index = 0;
+
+  function showSlide(n) {
+    index = (n + images.length) % images.length;
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  prev.addEventListener('click', () => showSlide(index - 1));
+  next.addEventListener('click', () => showSlide(index + 1));
+
+  // Troca automática a cada 5 segundos
+  setInterval(() => showSlide(index + 1), 5000);
+</script>
+
+</body>
+</html>
