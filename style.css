@@ -271,29 +271,38 @@ footer {
 
 /* Mobile – menu hambúrguer */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
 
   header .container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;             /* logo e botão na mesma linha */
+    justify-content: space-between;  /* espaço entre logo e botão */
+    align-items: center;             /* alinhamento vertical */
   }
 
   .logo {
     font-size: 15px;
-    max-width: 90%;
-    text-align: center;
-    margin-bottom: 10px;
+    max-width: 70%;                  /* espaço para o botão ao lado */
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
   }
 
   .nav {
-    display: none;
+    display: none;                   /* menu escondido inicialmente */
     width: 100%;
   }
 
   .nav.active {
-    display: block;
+    display: block;                  /* menu aparece ao clicar */
+    text-align: center;
+    margin-top: 10px;
   }
 
   .nav-links {
@@ -323,4 +332,3 @@ footer {
     align-items: center;
   }
 }
-
