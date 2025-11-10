@@ -131,6 +131,14 @@
   // Troca automática a cada 5 segundos
   setInterval(() => showSlide(index + 1), 5000);
 </script>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
 
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
+
