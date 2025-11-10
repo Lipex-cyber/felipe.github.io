@@ -1,4 +1,3 @@
-/* ===== Reset e estilo base ===== */
 * {
   margin: 0;
   padding: 0;
@@ -236,32 +235,68 @@ footer {
 }
 
 /* ===== Responsivo ===== */
+/* ===== Responsivo ===== */
+@media (max-width: 1024px) {
+  header .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 16px;
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
   .hero-flex {
     flex-direction: column-reverse;
     text-align: center;
   }
 
   .hero-img {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
   }
 
   .hero-text {
-    flex: 1 1 100%;
     max-width: 100%;
   }
 
   .servicos .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header .container {
-    flex-direction: column;
-  }
-
-  .nav-links {
     flex-direction: column;
     align-items: center;
   }
