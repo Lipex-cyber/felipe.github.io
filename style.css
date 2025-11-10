@@ -1,334 +1,329 @@
-/* ===== Reset e estilo base ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ /* ===== Reset e estilo base ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
-}
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 0;
-}
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+    }
 
-/* ===== Cabeçalho ===== */
-header {
-  background: #0a3d62;
-  color: #fff;
-  padding: 15px 0; /* altura menor */
-  position: relative; /* não fixa */
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
+    /* ===== Cabeçalho ===== */
+    header {
+      background: #0a3d62;
+      color: #fff;
+      padding: 15px 0; /* altura menor */
+      position: relative; /* não fixa */
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-.logo {
-  font-size: 20px; /* menor */
-  font-weight: bold;
-}
+    .logo {
+      font-size: 20px; /* menor */
+      font-weight: bold;
+    }
 
-/* Navegação padrão */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
 
-/* Botão hambúrguer (apenas mobile) */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 26px;
-  cursor: pointer;
-}
+    /* Botão hambúrguer */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 26px;
+      cursor: pointer;
+    }
 
-/* ===== Seção Home ===== */
-.hero {
-  background: linear-gradient(to right, #2980b9, #6dd5fa);
-  color: white;
-  padding: 100px 20px;
-}
+    /* ===== Seção Home ===== */
+    .hero {
+      background: linear-gradient(to right, #2980b9, #6dd5fa);
+      color: white;
+      padding: 100px 20px;
+    }
 
-.hero-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+    .hero-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
 
-.hero-text {
-  flex: 1 1 55%;
-  max-width: 550px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+    .hero-text {
+      flex: 1 1 55%;
+      max-width: 550px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-.hero-text h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
+    .hero-text h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
 
-.hero-text p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
+    .hero-text p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
 
-.hero .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  background: white;
-  color: #2980b9;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    .hero .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: white;
+      color: #2980b9;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-.hero .btn:hover {
-  background: #e3e3e3;
-}
+    .hero .btn:hover {
+      background: #e3e3e3;
+    }
 
-/* ===== Carrossel com slide + zoom + borda ===== */
-.hero-img {
-  flex: 1 1 35%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
+    /* ===== Carrossel ===== */
+    .hero-img {
+      flex: 1 1 35%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
 
-.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  border: 3px solid rgba(255,255,255,0.3);
-}
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 350px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      border: 3px solid rgba(255,255,255,0.3);
+    }
 
-.slides {
-  display: flex;
-  transition: transform 0.6s ease-in-out;
-}
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
 
-.slides img {
-  width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
+    .slides img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
 
-.slides img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
+    .slides img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
 
-/* Botões do carrossel */
-.carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
 
-.carousel button:hover {
-  background: rgba(0,0,0,0.8);
-}
+    .carousel button:hover {
+      background: rgba(0,0,0,0.8);
+    }
 
-.carousel .prev { left: 10px; }
-.carousel .next { right: 10px; }
+    .carousel .prev { left: 10px; }
+    .carousel .next { right: 10px; }
 
-/* ===== Seções gerais ===== */
-section {
-  padding: 60px 0;
-}
+    /* ===== Seções gerais ===== */
+    section {
+      padding: 60px 0;
+    }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #0a3d62;
-}
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0a3d62;
+    }
 
-/* ===== Habilidades ===== */
-.servicos .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    /* ===== Habilidades ===== */
+    .servicos .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 280px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-/* ===== Contato ===== */
-.contato {
-  background: #f8f9fa;
-  padding: 50px 0;
-  text-align: center;
-}
+    /* ===== Contato ===== */
+    .contato {
+      background: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+    }
 
-.contato h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #222;
-}
+    .contato h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
 
-.links-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-}
+    .links-contato {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
 
-.links-contato a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(90deg, #0d6efd, #6610f2);
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: 0.3s;
-}
+    .links-contato a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-.links-contato a:hover {
-  transform: scale(1.05);
-  background: linear-gradient(90deg, #6610f2, #0d6efd);
-}
+    .links-contato a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #6610f2, #0d6efd);
+    }
 
-/* ===== Rodapé ===== */
-footer {
-  background: #0a3d62;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
+    /* ===== Rodapé ===== */
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
 
-/* ===== Responsivo ===== */
+    /* ===== Responsivo ===== */
+    @media (max-width: 1024px) {
+      .logo {
+        font-size: 18px;
+      }
 
-/* Tablet e telas médias */
-@media (max-width: 1024px) {
-  .logo {
-    font-size: 18px;
-  }
+      .nav-links {
+        gap: 15px;
+      }
 
-  .nav-links {
-    gap: 15px;
-  }
+      header .container {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+    }
 
-  header .container {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-}
+    /* Mobile */
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: row;             /* logo e botão na mesma linha */
+        justify-content: space-between;
+        align-items: center;
+      }
 
-/* Mobile – menu hambúrguer */
-@media (max-width: 768px) {
+      .logo {
+        font-size: 15px;
+        max-width: 70%;
+        text-align: left;
+        margin-bottom: 0;
+      }
 
-  header .container {
-    flex-direction: row;             /* logo e botão na mesma linha */
-    justify-content: space-between;  /* espaço entre logo e botão */
-    align-items: center;             /* alinhamento vertical */
-  }
+      .menu-toggle {
+        display: block;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
 
-  .logo {
-    font-size: 15px;
-    max-width: 70%;                  /* espaço para o botão ao lado */
-    text-align: left;
-    margin-bottom: 0;
-  }
+      .nav {
+        display: none;
+        width: 100%;
+      }
 
-  .menu-toggle {
-    display: block;
-    font-size: 26px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
+      .nav.active {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
 
-  .nav {
-    display: none;                   /* menu escondido inicialmente */
-    width: 100%;
-  }
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #0a3d62;
+        padding: 10px 0;
+      }
 
-  .nav.active {
-    display: block;                  /* menu aparece ao clicar */
-    text-align: center;
-    margin-top: 10px;
-  }
+      .hero-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: #0a3d62;
-    padding: 10px 0;
-  }
+      .hero-img {
+        width: 85%;
+        margin: 0 auto;
+      }
 
-  .hero-flex {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+      .hero-text {
+        max-width: 100%;
+      }
 
-  .hero-img {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .servicos .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+      .servicos .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
