@@ -8,15 +8,11 @@
 </head>
 <body>
 
-  <!-- Cabeçalho -->
+<!-- Cabeçalho -->
   <header>
     <div class="container">
-      <h1 class="logo">FELIPE CAMPOS BORGES - TECNOLOGIA DA INFORMAÇÃO</h1>
-
-      <!-- Botão hambúrguer para mobile -->
+      <h1 class="logo">FELIPE CAMPOS BORGES - TI</h1>
       <button class="menu-toggle">&#9776;</button>
-
-      <!-- Navegação -->
       <nav class="nav">
         <ul class="nav-links">
           <li><a href="#home">Início</a></li>
@@ -34,11 +30,10 @@
       <div class="hero-text">
         <h2>Olá, esse sou eu, prazer!</h2>
         <p>Eu resido na região Metropolitana do Rio Grande do Sul/BR. Possuo Conhecimento em linguagens de programação, banco de dados e manutenção de hardwares.</p>
-        <p>A baixo tem mais informações sobre mim só precisa descer um pouco a tela. Mas caso queira entrar em contato comigo clique abaixo &#128071; .</p>
+        <p>A baixo tem mais informações sobre mim só precisa descer um pouco a tela. Mas caso queira entrar em contato comigo clique abaixo &#128071;.</p>
         <a href="#contato" class="btn">Entre em contato comigo!</a>
       </div>
 
-      <!-- Carrossel ao lado direito -->
       <div class="hero-img">
         <div class="carousel">
           <div class="slides">
@@ -58,20 +53,14 @@
     <div class="container">
       <h2>Sobre Mim</h2>
       <p>Prezados</p>
-      <br>
-      <p>Sou Felipe Campos Borges, tenho formação técnica em Eletrotécnica e atualmente curso Tecnólogo em Análise e Desenvolvimento de Sistemas pela Ulbra.
-      Tenho experiência com suporte ao cliente via WhatsApp, e-mail e ligações, além de manutenção eletrônica de hardware.
-      Gosto de aprender novas tecnologias, resolver problemas de forma prática e colaborar em ambientes que valorizem inovação e crescimento.
-      Estou em busca de oportunidades para aplicar e desenvolver minhas habilidades na área de tecnologia e suporte técnico.</p>
-      <br>
+      <p>Sou Felipe Campos Borges, tenho formação técnica em Eletrotécnica e atualmente curso Tecnólogo em Análise e Desenvolvimento de Sistemas pela Ulbra. Tenho experiência com suporte ao cliente via WhatsApp, e-mail e ligações, além de manutenção eletrônica de hardware. Gosto de aprender novas tecnologias, resolver problemas de forma prática e colaborar em ambientes que valorizem inovação e crescimento. Estou em busca de oportunidades para aplicar e desenvolver minhas habilidades na área de tecnologia e suporte técnico.</p>
       <p>Estou à disposição para discutir como posso contribuir para sua equipe ou projeto. Agradeço pela consideração e aguardo seu contato.</p>
-      <br>
       <p>Atenciosamente,</p>
       <p>Felipe Campos Borges</p>
     </div>
   </section>
 
-  <!-- Seção Serviços -->
+  <!-- Seção Habilidades -->
   <section id="servicos" class="servicos">
     <div class="container">
       <h2>Habilidades</h2>
@@ -97,17 +86,14 @@
     </div>
   </section>
 
-  <!-- Seção Contato -->
+  <!-- Contato -->
   <section id="contato" class="contato">
     <div class="container">
       <h2>Contato</h2>
       <p>Felipe Campos Borges</p>
-      <p>Portfólio: <a href="https://github.com/Lipex-cyber" target="_blank">https://github.com/Lipex-cyber</a></p>
+      <p>Portfólio: https://github.com/Lipex-cyber</p>
       <p>E-mail: felipecamposborgesinf@gmail.com</p>
       <p>Telefone: (51) 99604-8894</p>
-      <br>
-      <p>Ou acesse alguns dos links abaixo, para direcionar aos endereços automaticamente:</p>
-      <br>
       <div class="links-contato">
         <a href="https://github.com/Lipex-cyber" target="_blank">💻 GitHub</a>
         <a href="mailto:felipecamposborgesinf@gmail.com">📧 E-mail</a>
@@ -116,12 +102,7 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2025 Felipe Campos Borges. Todos os direitos reservados.</p>
-  </footer>
-
-  <!-- Script do Carrossel -->
+  <!-- Carrossel JS -->
   <script>
     const slides = document.querySelector('.carousel .slides');
     const images = document.querySelectorAll('.carousel .slides img');
@@ -137,18 +118,17 @@
     prev.addEventListener('click', () => showSlide(index - 1));
     next.addEventListener('click', () => showSlide(index + 1));
 
-    // Troca automática a cada 5 segundos
     setInterval(() => showSlide(index + 1), 5000);
   </script>
 
-  <!-- Script menu hambúrguer -->
+  <!-- Menu hambúrguer JS -->
   <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
 
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
   </script>
 
 </body>
