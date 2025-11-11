@@ -326,27 +326,26 @@
         flex-direction: column;
         align-items: center;
       }
-     }
-            /* ===== Estilo bloco Sobre Mim ===== */
-      .sobre-box {
-        padding: 40px 30px;    /* Mantém o espaçamento interno */
-        max-width: 900px;      /* Largura máxima */
-        margin: 0 auto;        /* Centraliza horizontalmente */
-        background: none;      /* Remove o fundo branco */
-        box-shadow: none;      /* Remove qualquer sombra */
-        border-radius: 0;      /* Remove bordas arredondadas */
-      }
-  
-      .sobre-box h2 {
-        text-align: center;
-        color: #0a3d62;
-        margin-bottom: 25px;
-      }
-  
-      .sobre-box p {
-        text-align: justify;   /* Justifica o texto */
-        line-height: 1.8;      /* Altura das linhas */
-        margin-bottom: 15px;   /* Espaço entre parágrafos */
-        text-indent: 0;         /* Sem recuo na primeira linha */
-      }
+    }
+          /* ===== Estilo bloco Sobre Mim ===== */
+    .sobre-box {
+      padding: 40px 30px;    /* Mantém o espaçamento interno */
+      max-width: 900px;      /* Largura máxima */
+      margin: 0 auto;        /* Centraliza horizontalmente */
+      background: none;      /* Remove o fundo branco */
+      box-shadow: none;      /* Remove qualquer sombra */
+      border-radius: 0;      /* Remove bordas arredondadas */
+    }
 
+    .sobre-box h2 {
+      text-align: center;
+      color: #0a3d62;
+      margin-bottom: 25px;
+    }
+
+    .sobre-box p {
+      text-align: justify;   /* Justifica o texto */
+      line-height: 1.8;      /* Altura das linhas */
+      margin-bottom: 15px;   /* Espaço entre parágrafos */
+      text-indent: 0;         /* Sem recuo na primeira linha */
+    }
